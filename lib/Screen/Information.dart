@@ -12,12 +12,13 @@ class _InfoState extends State<Info> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
+        scrollDirection: Axis.vertical,
         children: [
           Image.asset(
-            'img.jpg',
+            'img2.jpg',
             fit: BoxFit.fitWidth,
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 5),
           Container(
             padding: EdgeInsets.only(left: 10, right: 10),
             child: Column(
@@ -40,14 +41,25 @@ class _InfoState extends State<Info> {
                       //   color: Colors.black,
                       // ),
                       width: 10,
-                      child: Icon(
-                        Icons.star_border_outlined,
-                        size: 30,
+
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white38,
+                            borderRadius: BorderRadius.circular(100),
+                            border: Border.all(
+                                style: BorderStyle.solid,
+                                color: Colors.red,
+                                width: 2)),
+                        padding: EdgeInsets.all(8),
+                        child: Icon(
+                          Icons.star_border_outlined,
+                          size: 30,
+                        ),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(height: 5),
+                SizedBox(height: 0),
                 Row(
                   children: [
                     Text(
@@ -163,7 +175,7 @@ class _InfoState extends State<Info> {
                     )
                   ],
                 ),
-                const SizedBox(height: 25),
+                SizedBox(height: 25),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   child: Row(
@@ -174,7 +186,7 @@ class _InfoState extends State<Info> {
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
                       SizedBox(
-                        width: 300,
+                        width: 225,
                       ),
                       Text(
                         'See all ',
@@ -190,28 +202,28 @@ class _InfoState extends State<Info> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 13),
+                SizedBox(height: 13),
                 Row(
-                  children: const [
+                  children: [
                     Text('popular places to stay and spend time',
                         style:
                             TextStyle(color: Color.fromARGB(95, 27, 27, 27))),
                   ],
                 ),
-                const SizedBox(height: 5),
+                SizedBox(height: 5),
                 Row(
-                  children: const [
+                  children: [
                     Text('with benefit.',
                         style:
                             TextStyle(color: Color.fromARGB(95, 27, 27, 27))),
                   ],
                 ),
-                const SizedBox(height: 15),
+                SizedBox(height: 15),
                 Center(
                   child: FloatingActionButton.extended(
-                    label: const Text('View map'), // <-- Text
+                    label: Text('View map'), // <-- Text
                     backgroundColor: Colors.blue,
-                    icon: const Icon(
+                    icon: Icon(
                       // <-- Icon
                       Icons.map,
                       size: 24.0,
