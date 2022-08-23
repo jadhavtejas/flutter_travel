@@ -15,7 +15,7 @@ class _InfoState extends State<Info> {
         scrollDirection: Axis.vertical,
         children: [
           Image.asset(
-            'img2.jpg',
+            'img.jpg',
             fit: BoxFit.fitWidth,
           ),
           SizedBox(height: 5),
