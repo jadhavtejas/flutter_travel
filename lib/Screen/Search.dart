@@ -25,7 +25,7 @@ class _SearchState extends State<Search> {
                       contentPadding: const EdgeInsets.symmetric(
                           vertical: 5.0, horizontal: 1.0),
                       prefixIcon: const Icon(Icons.search),
-                      hintText: "OSlo",
+                      hintText: "Oslo",
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(),
