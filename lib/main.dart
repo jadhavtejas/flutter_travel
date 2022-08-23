@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
         routeInformationProvider: _router.routeInformationProvider,
         routeInformationParser: _router.routeInformationParser,
         routerDelegate: _router.routerDelegate,
+        title: 'Travel UI',
+        debugShowCheckedModeBanner: false,
       );
 
   final _router = GoRouter(
@@ -37,7 +39,3 @@ class MyApp extends StatelessWidget {
     ],
   );
 }
-
-
-
-
