@@ -1,26 +1,42 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:travel_ui_stf/Screen/Home.dart';
+import 'package:travel_ui_stf/Screen/Information.dart';
 import 'package:travel_ui_stf/Screen/Search.dart';
-import 'package:travel_ui_stf/Screen/information.dart';
+import 'package:go_router/go_router.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Travel UI',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+  Widget build(BuildContext context) => MaterialApp.router(
+        routeInformationProvider: _router.routeInformationProvider,
+        routeInformationParser: _router.routeInformationParser,
+        routerDelegate: _router.routerDelegate,
+      );
+
+  final _router = GoRouter(
+    routes: [
+      GoRoute(
+        path: '/Home', 
+        builder: (context, state) => const Home()),
+
+      GoRoute(
+        path: '/Info',
+        builder: (context, state) => Info(),
       ),
-      home: const MyStatefulWidget(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
+
+       GoRoute(
+        path: '/Search',
+        builder: (context, state) => Search(),
+      ),
+    ],
+  );
 }
 
 class MyStatefulWidget extends StatefulWidget {
