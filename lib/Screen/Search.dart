@@ -14,19 +14,33 @@ class _SearchState extends State<Search> {
     return Scaffold(
       body: ListView(
         children: [
-          Container(
-            padding: EdgeInsets.only(left: 15, right: 200),
-            child: TextField(
-              decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(
-                      vertical: 5.0, horizontal: 1.0),
-                  prefixIcon: const Icon(Icons.search),
-                  hintText: "Oslo",
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                    borderSide: const BorderSide(),
-                  )),
-            ),
+          Row(
+            children: [
+              Container(
+                width: 410,
+                margin: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.only(left: 15, right: 30),
+                child: TextField(
+                  decoration: InputDecoration(
+                      contentPadding: const EdgeInsets.symmetric(
+                          vertical: 5.0, horizontal: 1.0),
+                      prefixIcon: const Icon(Icons.search),
+                      hintText: "Oslo",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        borderSide: const BorderSide(),
+                      )),
+                ),
+              ),
+              Icon(Icons.settings_applications_sharp),
+              SizedBox(
+                width: 5,
+              ),
+              Text(
+                'Filters',
+                style: TextStyle(fontSize: 15),
+              )
+            ],
           ),
 
           //      Row(
