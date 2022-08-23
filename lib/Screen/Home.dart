@@ -10,27 +10,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  // Widget _category(BuildContext context) {
-  //   return Container(
-  //     padding: const EdgeInsets.only(top: 10, right: 50, left: 10, bottom: 15),
-  //     width: 100,
-  //     height: 90,
-  //     margin: const EdgeInsets.only(right: 10),
-  //     decoration: BoxDecoration(
-  //       borderRadius: BorderRadius.circular(15),
-  //       color: Colors.blue[300],
-  //     ),
-  //     child: Column(
-  //       children: const [
-  //         Icon(Icons.all_inbox_rounded),
-  //         SizedBox(
-  //           height: 10,
-  //         ),
-  //         Text('All'),
-  //       ],
-  //     ),
-  //   );
-  // }
+  
 
   @override
   Widget build(BuildContext context) {

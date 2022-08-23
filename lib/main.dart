@@ -15,27 +15,28 @@ class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => MaterialApp.router(
-        routeInformationProvider: _router.routeInformationProvider,
-        routeInformationParser: _router.routeInformationParser,
-        routerDelegate: _router.routerDelegate,
-        title: 'Travel UI',
+  Widget build(BuildContext context) => MaterialApp(
+        home: MyStatefulWidget(),
         debugShowCheckedModeBanner: false,
       );
+}
 
-  final _router = GoRouter(
-    initialLocation: '/',
-    routes: [
-      GoRoute(path: '/', builder: (context, state) => const MyStatefulWidget()),
-      GoRoute(path: '/Home', builder: (context, state) => const Home()),
-      GoRoute(
-        path: '/Info',
-        builder: (context, state) => Info(),
-      ),
-      GoRoute(
-        path: '/Search',
-        builder: (context, state) => Search(),
-      ),
-    ],
-  );
+class ViewCh extends StatefulWidget {
+  ViewCh({Key? key}) : super(key: key);
+
+  @override
+  State<ViewCh> createState() => _ViewChState();
+}
+
+class _ViewChState extends State<ViewCh> {
+  bool isDesktop(BuildContext context) =>
+      MediaQuery.of(context).size.width >= 600;
+
+  bool isMobile(BuildContext context) =>
+      MediaQuery.of(context).size.width < 600;
+      
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
