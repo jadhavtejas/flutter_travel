@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Info extends StatefulWidget {
-  Info({Key? key}) : super(key: key);
+  const Info({Key? key}) : super(key: key);
 
   @override
   State<Info> createState() => _InfoState();
@@ -18,24 +18,24 @@ class _InfoState extends State<Info> {
             'img.jpg',
             fit: BoxFit.fitWidth,
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Container(
-            padding: EdgeInsets.only(left: 10, right: 10),
+            padding: const EdgeInsets.only(left: 10, right: 10),
             child: Column(
               children: [
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.location_on,
                       color: Color.fromARGB(95, 27, 27, 27),
                     ),
-                    Text(
+                    const Text(
                       'Europe, Norway',
                       style: TextStyle(color: Color.fromARGB(95, 27, 27, 27)),
                     ),
                     Container(
-                      padding: EdgeInsets.only(left: 250),
-                      margin: EdgeInsets.only(top: 20),
+                      padding: const EdgeInsets.only(left: 250),
+                      margin: const EdgeInsets.only(top: 20),
                       // decoration: BoxDecoration(
                       //   borderRadius: BorderRadius.circular(50),
                       //   color: Colors.black,
@@ -50,8 +50,8 @@ class _InfoState extends State<Info> {
                                 style: BorderStyle.solid,
                                 color: Colors.red,
                                 width: 2)),
-                        padding: EdgeInsets.all(8),
-                        child: Icon(
+                        padding: const EdgeInsets.all(8),
+                        child: const Icon(
                           Icons.star_border_outlined,
                           size: 30,
                         ),
@@ -59,9 +59,9 @@ class _InfoState extends State<Info> {
                     ),
                   ],
                 ),
-                SizedBox(height: 0),
+                const SizedBox(height: 0),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       'Skudeneshavn',
                       style:
@@ -71,7 +71,7 @@ class _InfoState extends State<Info> {
                 ),
                 SizedBox(height: 15),
                 Row(
-                  children: [
+                  children: const [
                     Icon(
                       Icons.star,
                       color: Colors.yellow,
@@ -99,36 +99,36 @@ class _InfoState extends State<Info> {
                     Text('   4.9 (1689 reviews)')
                   ],
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       'The northernmost state is Europe, the',
                       style: TextStyle(color: Color.fromARGB(95, 27, 27, 27)),
                     ),
                   ],
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       'Kingdom of Norway is know for the beauty of its',
                       style: TextStyle(color: Color.fromARGB(95, 27, 27, 27)),
                     ),
                   ],
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       'mountain ranges and fjords that encircle the northern',
                       style: TextStyle(color: Color.fromARGB(95, 27, 27, 27)),
                     ),
                   ],
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       'part of its western coast.',
                       style: TextStyle(color: Color.fromARGB(95, 27, 27, 27)),
@@ -137,7 +137,7 @@ class _InfoState extends State<Info> {
                 ),
                 SizedBox(height: 15),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       'Read more',
                       style: TextStyle(color: Colors.blue),
@@ -148,34 +148,34 @@ class _InfoState extends State<Info> {
                     )
                   ],
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Row(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                           top: 8, left: 38, right: 38, bottom: 8),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(60),
                           border: Border.all(
-                              color: Color.fromARGB(255, 101, 101, 104))),
-                      child: Text(
+                              color: const Color.fromARGB(255, 101, 101, 104))),
+                      child: const Text(
                         'Overview',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(width: 35),
-                    Text(
+                    const SizedBox(width: 35),
+                    const Text(
                       'Hotels',
                       style: TextStyle(),
                     ),
-                    SizedBox(width: 35),
-                    Text(
+                    const SizedBox(width: 35),
+                    const Text(
                       'Restaurants',
                       style: TextStyle(),
                     )
                   ],
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   child: Row(
@@ -202,9 +202,9 @@ class _InfoState extends State<Info> {
                     ],
                   ),
                 ),
-                SizedBox(height: 13),
+                const SizedBox(height: 13),
                 Row(
-                  children: [
+                  children: const [
                     Text('popular places to stay and spend time',
                         style:
                             TextStyle(color: Color.fromARGB(95, 27, 27, 27))),
@@ -212,18 +212,18 @@ class _InfoState extends State<Info> {
                 ),
                 SizedBox(height: 5),
                 Row(
-                  children: [
+                  children: const [
                     Text('with benefit.',
                         style:
                             TextStyle(color: Color.fromARGB(95, 27, 27, 27))),
                   ],
                 ),
-                SizedBox(height: 15),
+                const SizedBox(height: 15),
                 Center(
                   child: FloatingActionButton.extended(
-                    label: Text('View map'), // <-- Text
+                    label: const Text('View map'), // <-- Text
                     backgroundColor: Colors.blue,
-                    icon: Icon(
+                    icon: const Icon(
                       // <-- Icon
                       Icons.map,
                       size: 24.0,
