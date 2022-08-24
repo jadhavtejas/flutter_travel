@@ -73,6 +73,7 @@ flutter:
     - assets/search1.jpg
     - assets/search2.jpg
     - assets/search3.jpg
+    - assets/HomeIconTop.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
