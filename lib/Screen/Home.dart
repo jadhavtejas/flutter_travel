@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -10,8 +8,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  
+ bool isDesktop(BuildContext context) =>
+      MediaQuery.of(context).size.width >= 600;
 
+  bool isMobile(BuildContext context) =>
+      MediaQuery.of(context).size.width < 600;
   @override
   Widget build(BuildContext context) {
     Text _buildRatingStars(int rating) {

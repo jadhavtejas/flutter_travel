@@ -2,10 +2,6 @@ import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:travel_ui_stf/Screen/BottomNavigation.dart';
-import 'package:travel_ui_stf/Screen/Home.dart';
-import 'package:travel_ui_stf/Screen/Information.dart';
-import 'package:travel_ui_stf/Screen/Search.dart';
-import 'package:go_router/go_router.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,6 +17,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(fontFamily: 'Avenir'),
       );
 }
+<<<<<<< HEAD
 
 class ViewCh extends StatefulWidget {
   ViewCh({Key? key}) : super(key: key);
@@ -41,3 +38,5 @@ class _ViewChState extends State<ViewCh> {
     return Container();
   }
 }
+=======
+>>>>>>> 095e22f3456e5f7a2c3cdd9794b72327034fbfac

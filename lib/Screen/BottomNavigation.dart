@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_ui_stf/Screen/Home.dart';
 import 'package:travel_ui_stf/Screen/Information.dart';
+import 'package:travel_ui_stf/Screen/Menu.dart';
 import 'package:travel_ui_stf/Screen/Search.dart';
 
 
@@ -17,7 +18,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     Home(),
     Search(),
     Info(),
-    Text('Menu'),
+    Menu(),
   ];
 
   void _onItemTapped(int index) {
