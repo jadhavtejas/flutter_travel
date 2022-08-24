@@ -7,5 +7,4 @@ class AppImages {
 //   static const String = "assets/search1.jpg";
 //   static const String = "assets/search2.jpg";
 //   static const String = "assets/search3.jpg";
-// }
 }
