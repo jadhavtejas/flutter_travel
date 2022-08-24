@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-        home: MyStatefulWidget(),
+        home: const MyStatefulWidget(),
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(fontFamily: 'Avenir'),
       );
 }
