@@ -52,6 +52,12 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  fonts:
+    - family: Avenir
+      fonts:
+        - asset: fonts/AvenirLTStd-Black.otf
+        - asset: fonts/AvenirLTStd-Book.otf
+          style: italic
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -81,10 +87,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  #   - family: avenir
+  #      fonts:
+  #       - asset: fonts/AvenirLTStd-Black.otf
+  #       - asset: fonts/AvenirLTStd-Book.otf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

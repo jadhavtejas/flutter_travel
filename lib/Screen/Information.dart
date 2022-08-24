@@ -64,8 +64,10 @@ class _InfoState extends State<Info> {
                   children: const [
                     Text(
                       'Skudeneshavn',
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          ),
                     )
                   ],
                 ),

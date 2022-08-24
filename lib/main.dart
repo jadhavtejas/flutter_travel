@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         home: MyStatefulWidget(),
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(fontFamily: 'Avenir'),
       );
 }
 
@@ -34,7 +35,7 @@ class _ViewChState extends State<ViewCh> {
 
   bool isMobile(BuildContext context) =>
       MediaQuery.of(context).size.width < 600;
-      
+
   @override
   Widget build(BuildContext context) {
     return Container();
