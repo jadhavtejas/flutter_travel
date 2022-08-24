@@ -14,6 +14,5 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         home: MyStatefulWidget(),
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(fontFamily: 'Avenir'),
       );
 }
